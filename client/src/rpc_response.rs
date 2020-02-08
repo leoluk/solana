@@ -198,6 +198,8 @@ pub struct RpcContactInfo {
     pub tpu: Option<SocketAddr>,
     /// JSON RPC port
     pub rpc: Option<SocketAddr>,
+    /// Wallclock
+    pub wallclock: u64,
 }
 
 /// Map of leader base58 identity pubkeys to the slot indices relative to the first epoch slot

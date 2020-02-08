@@ -732,6 +732,7 @@ impl RpcSol for RpcSolImpl {
                         gossip: Some(contact_info.gossip),
                         tpu: valid_address_or_none(&contact_info.tpu),
                         rpc: valid_address_or_none(&contact_info.rpc),
+                        wallclock: contact_info.wallclock
                     })
                 } else {
                     None // Exclude spy nodes
